@@ -19,8 +19,8 @@ void readProduct(product p);
 int updateProduct(product *p);
 int deleteProduct(product *p);
 int selectMenu();
-//void saveProductData(product* p, int count);
-//int loadProductData(product* p);
+void saveProductData(product* p, int count);
+int loadProductData(product* p);
 
 void searchProduct(product *p, int count);    //제품이름 검색
 void searchStar(product *p, int count);       //별점별 검색
