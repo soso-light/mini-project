@@ -23,7 +23,7 @@ int createProduct(product *p){
 	return 1;
 }
 void readProduct(product p){
-	printf("%-4dg %-7d %-2u (%-5d) %s\n", p.weight, p.price, p.star, p.starnum, p.name);
+	printf("%-5dg  %-7d %-2u   (%-6d) %s\n", p.weight, p.price, p.star, p.starnum, p.name);
 }
 int updateProduct(product *p){
 	printf("상품명은? ");
@@ -67,7 +67,7 @@ int selectMenu(){
 	scanf("%d", &menu);
 	return menu;
 }
-/*
+
 void saveProductData(product* p, int count){
 	FILE *fp;
 	fp = fopen("product.txt", "wt");
@@ -77,10 +77,9 @@ void saveProductData(product* p, int count){
 	}
 	fclose(fp);
 	printf("=> 저장됨! \n");
-}*/
-/*
+}
 int loadProductData(product* p){
-	int count = 0, i=0;
+	int i=0;
 	FILE *fp;
 	fp = fopen("product.txt","rt");
 	if(fp == NULL) {
@@ -98,7 +97,7 @@ int loadProductData(product* p){
 	fclose(fp);
 	printf("=> 로딩 성공!\n");
 	return i;
-}*/
+}
 
 void searchProduct(product *p, int count){
 	int scnt = 0;
