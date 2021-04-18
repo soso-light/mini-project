@@ -9,8 +9,8 @@ int main(void){
 	int count = 0, index=0, menu;
 	int no;
 
-	//count = loadProductData(plist);
-	//index = count;
+	count = loadProductData(plist);
+	index = count;
 
 	while (1){
 		menu = selectMenu();
@@ -50,10 +50,9 @@ int main(void){
 				}
 			}
 		}
-		/*
 		else if(menu == 5){
 			saveProductData(plist, index);
-		}*/
+		}
 		else if(menu == 6){
 			searchProduct(plist,index);
 		}else if(menu == 7){
