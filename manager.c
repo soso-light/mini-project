@@ -2,7 +2,7 @@
 #include "manager.h"
 
 void listProduct(product *p, int count){
-	printf("\nNo weight  price\t star\t starnum\t Name\n");
+	printf("\nNo weight  price  star  starnum\t Name\n");
 	printf("=================================================\n");
 	for(int i =0; i <count ; i++){
 		if(p[i].weight == -1) continue;
